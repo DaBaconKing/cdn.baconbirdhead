@@ -1,6 +1,6 @@
 services:
-  - type: static
-    name: my-cdn          # You can change the name
-    env: static
-    buildCommand: ""      # Nothing to build
-    publishPath: "/"      # Use the repo root as the publish directory
+  - type: web           # <-- use "web", not "static"
+    name: my-cdn
+    env: static         # tells Render this is a static site
+    buildCommand: ""    # nothing to build
+    staticPublishPath: "/"   # the folder to publish (root of repo)
