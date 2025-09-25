@@ -1,6 +1,6 @@
 services:
-  - type: web           # <-- use "web", not "static"
+  - type: web           # Static site
     name: my-cdn
-    env: static         # tells Render this is a static site
+    env: static
     buildCommand: ""    # nothing to build
-    staticPublishPath: "/"   # the folder to publish (root of repo)
+    staticPublishPath: "."   # root of the repo
