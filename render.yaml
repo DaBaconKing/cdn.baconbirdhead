@@ -1,8 +1,6 @@
 services:
   - type: static
-    name: my-cdn
+    name: my-cdn          # You can change the name
     env: static
-    repo: https://github.com/DaBaconKing/cdn.baconbirdhead
-    branch: main
-    buildCommand: ""  # No build needed for static files
-    publishPath: "/"  # Root folder contains all files
+    buildCommand: ""      # Nothing to build
+    publishPath: "/"      # Use the repo root as the publish directory
